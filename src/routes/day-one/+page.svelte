@@ -54,8 +54,9 @@
 <section class="grid grid-cols-3 gap-3 mb-4">
 	<input type="text" name="name" id="name" placeholder="name" />
 	<input type="text" name="tally" id="tally" placeholder="tally" />
-	<button class="px-2 py-1 bg-zinc-300 font-semibold font-serif rounded-md" on:click={add}
-		>Add</button
+	<button
+		class="px-3 py-1 bg-slate-100 rounded border-b-4 border-r-4 shadow-lg border-b-zinc-900 border-r-zinc-900 hover:border-r-0 hover:border-b-0 active:border-t-2 active:border-l-2 hover:border-zinc-900 transition-all duration-100 ease-in-out font-mono font-medium active:shadow-inner hover:shadow-inner"
+		on:click={add}>Add</button
 	>
 </section>
 
@@ -76,7 +77,7 @@
 
 <main class="grid grid-cols-4 gap-5 mb-7">
 	{#each filtered as item}
-		<div class="rounded-md p-5 shadow-md">
+		<div class="rounded-md p-5 shadow-md bg-slate-50">
 			<h2>name: {item.name}</h2>
 			<p>tally: {item.tally}</p>
 		</div>

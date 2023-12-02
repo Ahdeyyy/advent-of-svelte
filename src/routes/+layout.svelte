@@ -8,7 +8,10 @@
 
 <div class="grid grid-cols-7 gap-2">
 	<aside class="grid grid-cols-1 col-span-1 gap-0">
-		<a href="/">home</a>
+		<a
+			class="text-center font-mono font-medium bg-zinc-100 grid place-content-center hover:bg-zinc-200 cursor-pointer transition-all duration-100 ease-in-out aspect-square"
+			href="/">home</a
+		>
 	</aside>
 
 	<div class="col-span-6 container p-12 mx-auto">
