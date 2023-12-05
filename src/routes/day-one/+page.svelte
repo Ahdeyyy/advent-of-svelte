@@ -77,7 +77,7 @@
 
 <main class="grid grid-cols-4 gap-5 mb-7">
 	{#each filtered as item}
-		<div class="rounded-md p-5 shadow-md bg-slate-50">
+		<div class="rounded-box p-5 card shadow-md bg-slate-50">
 			<h2>name: {item.name}</h2>
 			<p>tally: {item.tally}</p>
 		</div>
