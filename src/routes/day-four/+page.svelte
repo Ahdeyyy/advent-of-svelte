@@ -1,6 +1,12 @@
 <script lang="ts">
-	let heart_rate = $state(0);
-	let average_heart_rate = $state(0);
+	let heart_rates = JSON.parse(localStorage.getItem('heart_rates') || '[]');
+
+	let heart_rate = $state(Number(heart_rates[heart_rates.length - 1]));
+	let average_heart_rate = $state(
+		Math.round(
+			heart_rates.reduce((a: number, b: number) => Number(a) + Number(b), 0) / heart_rates.length
+		)
+	);
 
 	async function getHeartRate() {
 		const json = await fetch('https://advent.sveltesociety.dev/data/2023/day-four.json');
