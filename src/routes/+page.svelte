@@ -13,5 +13,8 @@
 		<li>
 			<a href="/day-four" class="link-hover font-mono font-medium">day four</a>
 		</li>
+		<li>
+			<a href="/day-five" class="link-hover font-mono font-medium">day five</a>
+		</li>
 	</ul>
 </main>
